@@ -3,6 +3,7 @@ package com.xioawu.studentsys;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//这是一个测试
 public class APP {
     public static void main(String[] args) {
         ArrayList<User> list = new ArrayList<User>();
