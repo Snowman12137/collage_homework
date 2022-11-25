@@ -1,4 +1,6 @@
-package com.xioawu.studentsys;
+package com.xioawu.studentsys.modify;
+
+import com.xioawu.studentsys.User;
 
 import java.util.ArrayList;
 import java.util.Random;

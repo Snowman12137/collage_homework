@@ -1,15 +1,16 @@
-package com.xioawu.studentsys;
+package com.xioawu.studentsys.modify;
 /*
   @auther : snowman
   @date : 2022年11月21日 19:35
   */
-import java.awt.color.ICC_ColorSpace;
+import com.xioawu.studentsys.Student;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StudentSystem {
     public static void main(String[] args) {
-        ArrayList<Student> list = new ArrayList<>();
+        ArrayList<com.xioawu.studentsys.Student> list = new ArrayList<>();
         loop:while (true) {
             System.out.println("------------------欢迎来到学生管理系统------------------");
             System.out.println("1:添加学生");
@@ -41,8 +42,8 @@ public class StudentSystem {
 
 
     //添加学生
-    public static void addStudent(ArrayList<Student> list){
-        Student s = new Student();
+    public static void addStudent(ArrayList<com.xioawu.studentsys.Student> list){
+        com.xioawu.studentsys.Student s = new com.xioawu.studentsys.Student();
         Scanner sc = new Scanner(System.in);
         String id = null;
         while (true) {
@@ -86,7 +87,7 @@ public class StudentSystem {
     }
 
     //删除学生
-    public static void deleteStudent(ArrayList<Student> list){
+    public static void deleteStudent(ArrayList<com.xioawu.studentsys.Student> list){
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入要删除的id");
         String id = sc.next();
@@ -100,7 +101,7 @@ public class StudentSystem {
     }
 
     //修改学生
-    public static void updateStudent(ArrayList<Student> list){
+    public static void updateStudent(ArrayList<com.xioawu.studentsys.Student> list){
         Scanner sc =new Scanner(System.in);
         System.out.println("请输入要修改的学生id");
         String id =sc.next();
@@ -111,7 +112,7 @@ public class StudentSystem {
             return;
         }
 
-        Student stu = list.get(index);
+        com.xioawu.studentsys.Student stu = list.get(index);
         System.out.println("请输入要修改学生的姓名");
         String newName =sc.next();
         stu.setName(newName);
@@ -130,7 +131,7 @@ public class StudentSystem {
     }
 
     //查询学生
-    public static void queryStudent(ArrayList<Student> list){
+    public static void queryStudent(ArrayList<com.xioawu.studentsys.Student> list){
         if(list.size()==0){
             System.out.println("当前无学生信息，请添加后再查询");
             return;
@@ -140,14 +141,14 @@ public class StudentSystem {
         //打印表头信息
         System.out.println("id\t\t姓名\t年龄\t家庭住址");
         for (int i = 0; i < list.size(); i++) {
-            Student stu = list.get(i);
+            com.xioawu.studentsys.Student stu = list.get(i);
             System.out.println(stu.getId()+ "\t"+stu.getName()+"\t"+stu.getAge()+"\t"+stu.getAddress());
         }
     }
 
 
     //判断学生id是否存在
-    public static boolean contains(ArrayList<Student> list,String id){
+    public static boolean contains(ArrayList<com.xioawu.studentsys.Student> list, String id){
         /*for (int i = 0; i < list.size(); i++) {
             Student stu =  list.get(i);
             String sid =stu.getId();
@@ -161,7 +162,7 @@ public class StudentSystem {
 
 
     //获取索引id的方法
-    public static int getIndex(ArrayList<Student> list,String id){
+    public static int getIndex(ArrayList<com.xioawu.studentsys.Student> list, String id){
         //遍历集合
         for (int i = 0; i < list.size(); i++) {
             //得到每一个学生对象
