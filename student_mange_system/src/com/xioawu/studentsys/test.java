@@ -5,6 +5,9 @@ package com.xioawu.studentsys;
   */
 
 public class test {
+    public static void main(String[] args) {
 
+    }
 
 }
+

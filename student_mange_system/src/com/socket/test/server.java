@@ -11,11 +11,14 @@ import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class server {
-    public static void main(String[] args) throws IOException {
-        ServerSocket server = new ServerSocket(2000);
-        System.out.println("服务器准备就绪");
 
+public class server {
+    static int cl ;
+
+    public static void main(String[] args) throws IOException {
+        ServerSocket server = new ServerSocket(4000);
+        System.out.println("服务器准备就绪");
+        int cl = 0;
 
         //等待客户端链接
         Socket client = null;
@@ -45,6 +48,8 @@ public class server {
             super.run();
             System.out.println("新客户端链接："+socket.getInetAddress()+"P:"+socket.getLocalPort());
         try {
+            cl++;
+            System.out.println("目前链接的客户端数量为"+cl);
             //得到打印流，用于数据输出；服务器送回数据使用
             PrintStream socketOutout = new PrintStream(socket.getOutputStream());
             //得到输入流，用于接收数据

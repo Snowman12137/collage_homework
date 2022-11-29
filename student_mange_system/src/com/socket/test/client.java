@@ -16,7 +16,7 @@ public class client {
         socket.setSoTimeout(3000);
 
         //链接本地端，端口2000
-        socket.connect(new InetSocketAddress(Inet4Address.getLocalHost(),2000),3000);
+        socket.connect(new InetSocketAddress(Inet4Address.getLocalHost(),4000),3000);
 
         System.out.println("已发起服务器连接，并进入后续流程");
 

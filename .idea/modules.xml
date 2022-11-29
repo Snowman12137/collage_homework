@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/student_mange_system/Chat_Room_Imitate_QQ.iml" filepath="$PROJECT_DIR$/student_mange_system/Chat_Room_Imitate_QQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/Chat_Room_Imitate_QQ_.iml" filepath="$PROJECT_DIR$/test/Chat_Room_Imitate_QQ_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chat_Room_QQ_Client/Chat_Room_QQ_Client.iml" filepath="$PROJECT_DIR$/Chat_Room_QQ_Client/Chat_Room_QQ_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_mange_system/Chat_Room_QQ_Server.iml" filepath="$PROJECT_DIR$/student_mange_system/Chat_Room_QQ_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chat_Room_QQ_server/Chat_Room_QQ_server.iml" filepath="$PROJECT_DIR$/Chat_Room_QQ_server/Chat_Room_QQ_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/test1/student_mange.iml" filepath="$PROJECT_DIR$/test1/student_mange.iml" />
       <module fileurl="file://$PROJECT_DIR$/student_mange_system/student_mange_system.iml" filepath="$PROJECT_DIR$/student_mange_system/student_mange_system.iml" />
       <module fileurl="file://$PROJECT_DIR$/test1/test1.iml" filepath="$PROJECT_DIR$/test1/test1.iml" />
